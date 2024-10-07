@@ -7,26 +7,35 @@
 
 import SwiftUI
 
-struct CircularProgressModel {
-    let strokeWidth: CGFloat
-    let progressColor: Color
-    let backgroundColor: Color
-    var startValue: Double = 0
-    var endValue: Double = 1
-    var shouldAnimate: Bool = false
+public struct CircularProgressModel {
+    public let strokeWidth: CGFloat
+    public let progressColor: Color
+    public let backgroundColor: Color
+    public var startValue: Double = 0
+    public var endValue: Double = 1
+    public var shouldAnimate: Bool = false
+
+    public init(strokeWidth: CGFloat, progressColor: Color, backgroundColor: Color, startValue: Double, endValue: Double, shouldAnimate: Bool) {
+        self.strokeWidth = strokeWidth
+        self.progressColor = progressColor
+        self.backgroundColor = backgroundColor
+        self.startValue = startValue
+        self.endValue = endValue
+        self.shouldAnimate = shouldAnimate
+    }
 }
 
-struct CircularProgressBar: View {
+public struct CircularProgressBar: View {
 
     @State private var animatedEndValue: Double = 0
 
-    let model: CircularProgressModel
+    private let model: CircularProgressModel
 
-    init(model: CircularProgressModel) {
+    public init(model: CircularProgressModel) {
         self.model = model
     }
 
-    var body: some View {
+    public var body: some View {
         ZStack {
             Circle()
                 .stroke(
@@ -60,7 +69,8 @@ struct CircularProgressBar: View {
             progressColor: Color.red,
             backgroundColor: Color.pink.opacity(0.5),
             startValue: 0,
-            endValue: 0.75
+            endValue: 0.75,
+            shouldAnimate: true
         )
     )
 }
