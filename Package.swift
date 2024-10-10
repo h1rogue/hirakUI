@@ -25,11 +25,6 @@ let package = Package(
         .target(
             name: "HirakUI",
             path: "HirakUI"
-        ),
-        .testTarget(
-            name: "HirakUITests",
-            dependencies: ["HirakUI"],
-            path: "HirakUITests"
-        ),
+        )
     ]
 )
