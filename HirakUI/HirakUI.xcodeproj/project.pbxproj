@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47045FD02CB82FA0008F780A /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47045FCF2CB82F9B008F780A /* Package.swift */; };
 		478A56A32CB1AEAF00D5A9D1 /* HirakUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478A56982CB1AEAF00D5A9D1 /* HirakUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47045FCF2CB82F9B008F780A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		478A56982CB1AEAF00D5A9D1 /* HirakUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HirakUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		478A56A22CB1AEAF00D5A9D1 /* HirakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HirakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 		478A568E2CB1AEAF00D5A9D1 = {
 			isa = PBXGroup;
 			children = (
+				47045FCF2CB82F9B008F780A /* Package.swift */,
 				478A569A2CB1AEAF00D5A9D1 /* HirakUI */,
 				478A56A62CB1AEAF00D5A9D1 /* HirakUITests */,
 				478A56992CB1AEAF00D5A9D1 /* Products */,
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47045FD02CB82FA0008F780A /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
