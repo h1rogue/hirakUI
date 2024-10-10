@@ -13,7 +13,7 @@ import PackageDescription
 let package = Package(
     name: "HirakUI",
     platforms: [
-        .iOS(.v11) // Adjust according to your minimum deployment target
+        .iOS(.v15) // Adjust according to your minimum deployment target
     ],
     products: [
         .library(
